@@ -15,8 +15,8 @@ python version 3.9
 npm version 8.3.1
 node version 17.4.0
 
-React
-Typescript
-Vite
-FSD
-```npm i``` - установка зависимостей
+Работа с frontend:
+- ```cd frontend``` - переход в директорию frontend
+- ```npm i``` - установка зависимостей
+- ```npm run start:dev``` - запуск vite-сборщика
+- 
