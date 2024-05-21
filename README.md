@@ -19,4 +19,3 @@ node version 17.4.0
 - ```cd frontend``` - переход в директорию frontend
 - ```npm i``` - установка зависимостей
 - ```npm run start:dev``` - запуск vite-сборщика
-- 
