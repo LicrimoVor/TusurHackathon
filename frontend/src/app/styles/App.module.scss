@@ -1,4 +1,13 @@
 .app {
-    background: gray;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

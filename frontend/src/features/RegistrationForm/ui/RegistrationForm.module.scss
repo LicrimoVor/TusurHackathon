@@ -1,0 +1,27 @@
+.RegistrationForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 360px;
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+}
+
+.error {
+    background-color: #FFE0E0;
+    border: 2px solid #9B2828;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
