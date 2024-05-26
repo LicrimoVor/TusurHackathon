@@ -3,7 +3,7 @@
 Хакатон от ТУСУРа. Подбор факультета для абитуриента
 ___
 ## Backend
-python version 3.9
+python version 3.11.5
 
 Работа с backend:
 - ```cd backend``` - переход в директорию backend
