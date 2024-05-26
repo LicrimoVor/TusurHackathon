@@ -15,3 +15,6 @@ class Group(models.Model):
     creator = models.OneToOneField(User, on_delete=models.CASCADE, related_name='created_groups')
     # Поле для связи многих ко многим с пользователями группы
     members = models.ManyToManyField(User, related_name='user_groups')
+
+    def __str__(self):
+        return self.name
