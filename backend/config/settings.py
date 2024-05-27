@@ -1,4 +1,9 @@
 from pathlib import Path
+from django.utils import formats
+
+
+
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-rtzcp-$ffw&b3kw72uq872lp+kt-0dgjq6p+excws%ha3nsru2"
@@ -13,6 +18,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "users",
+    "corsheaders" #Чтобы фронт работал нормально
 ]
 
 MIDDLEWARE = [
@@ -23,6 +31,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware" #Чтобы фронт работал нормально
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -47,7 +56,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": BASE_DIR / "hakaton_users"
     }
 }
 
@@ -77,3 +86,10 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "users.UserProfile"
+
+formats.DATE_FORMAT = '%d.%m.%Y'
+
+CORS_ORIGIN_ALLOW_ALL = True #Чтобы фронт работал нормально
+CORS_ALLOW_CREDENTIALS = True #Чтобы фронт получал куки
