@@ -1,6 +1,4 @@
-from django.shortcuts import render
 from rest_framework import generics
-from rest_framework.views import APIView
 from .models import Profile
 from .serializers import ProfileSerializer, UserSerializer
 from django.contrib.auth import get_user_model

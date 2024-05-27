@@ -1,7 +1,5 @@
 from pathlib import Path
 import os
-from pathlib import Path
-from os import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-rtzcp-$ffw&b3kw72uq872lp+kt-0dgjq6p+excws%ha3nsru2"
@@ -89,4 +87,4 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-#pidr
+# pidr

@@ -7,8 +7,8 @@ User = get_user_model()
 
 # Create your models here.
 class Comment(models.Model):
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='comments')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="comments")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
     text = models.TextField()
     # Поле для временной метки создания комментария
     created_at = models.DateTimeField(auto_now_add=True)
